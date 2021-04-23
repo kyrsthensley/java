@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Boxes</title>
+<link rel="stylesheet" href="mystyle.css">
+</head>
+<body>
+<div id="container">
+     <div id="boxy4">
+          <button id="button4" onclick="myFunctions()">What is 10 + 10? <br><i>Click me to find out!</i></button>
+     </div>
+
+     <div id="img">
+          <img id="myImage" src="cutout.png" >
+     </div>
+
+
+     <div id="boxy">
+     <button id="button1" onclick="document.getElementById('myImage').src='cutout.png'">Building <br><i>Click me!</i></button>
+     </div>
+
+
+
+     <div id="boxy2">
+     <button id="button2" onclick="document.getElementById('myImage').src='cutout2.png'" onclick="document.getElementById('myImage').src='cutout.png'">Sky<br><i>Click me!</i>
+     </button>
+     </div>
+
+     <div id="boxy3">
+     <button id="button3" type="button" onclick="myFunction()">Change the paragraph!<br>Click me!</button>
+     </div>
+
+     <div id="content-box">
+          <h1 id="box1">Box 1</h1>
+          <p id="demo"><i>I added a shadow to the boxes</i><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque maximus neque ac lorem sodales lobortis. Suspendisse venenatis aliquet purus, quis maximus ipsum ultricies ut. Aenean quis varius mauris. Vestibulum accumsan purus a elit feugiat will live. In sit amet pretium dolor, venenatis semper urna. Praesent vel erat tortor. Ut congue lacinia cursus. Suspendisse tempus tincidunt urna eget ultrices. Morbi et justo who is blandit porttitor. Phasellus course eros sit amet laoreet accumsan. Donec rutrum odio nec iaculis pretium. Mauris varius, velit ac pellentesque consectetur, felis orci ultrices nunc, posuere facilisis nibh ipsum tincidunt elit. Suspendisse eu elementum metus. Nam consectetur gravida tincidunt. Pellentesque morbid inhabitant senectus and netus and malesuada fames ac turpis egestas. Nulla semper est and mattis euismod.</p>
+     </div>
+
+
+</div>
+<script>
+function myFunction() {
+  document.getElementById("demo").innerHTML = "I changed the content of the paragraph! Now all you see is this. Refresh the page to see the original content.<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>";
+}
+</script>
+<script>
+function myFunctions() {
+  alert("10 + 10 = 20!");
+}
+</script>
+
+</body>
+</html>
